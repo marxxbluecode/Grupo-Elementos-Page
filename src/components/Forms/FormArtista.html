@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleartistas.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <div class="Header">
+        <img class="logo" src="images/Grupo-Elementos-Logo-Black.png" alt="Logo Grupo Elemento">
+        <h1 class="Title">Ficha de Cadastro (artistas)</h1>
+    </div>
+
+    <form>
+        <fieldset>
+            <h2>Informações gerais</h2>
+            <div class="cabeçalho">
+                <div class="names">
+                    <div class="name">
+                        <label><strong>Nome Artístico:</strong></label>
+                        <input type="text" name="nome artístico" class="nameinput">
+                    </div>
+                    <div class="name">
+                        <label><strong>Nome Completo:</strong></label>
+                        <input type="text" name="nome" class="surname" required>
+                    </div>
+                </div>
+                <div class="profile">
+                    <input placeholder="Adicione uma foto ao seu perfil" class="foto" type="file" name="MAX_FILE_SIZE" value="10194304"/>
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <label><strong>Gênero:</strong></label>
+                <br>
+                <input type="radio" name="gender" value="masculino" class="gender">masculino
+                <input type="radio" name="gender" value="feminino" class="gender">feminino
+                <input type="radio" name="gender" value="transgenero" class="gender">Transgênero
+                <input type="radio" name="gender" value="outros" class="gender">outros
+                <textarea class="areatexto" row="6" style="width: 48em; height: 8em;" id="experiencia" name="experiencia" placeholder="No caso de outros, Especifique"></textarea>
+            </div>
+            <div class="name">
+                <label><strong>Data de Nascimento:</strong> </label>
+                <input type="date" name="data" class="age" required>
+            </div>
+            <div class="name">
+                <label><strong>Nacionalidade:</strong></label>
+                <select class="nacionalidade">
+                    <option value="África do Sul">África do Sul</option>
+                    <option value="Albânia">Albânia</option>
+                    <option value="Alemanha">Alemanha</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antigua">Antigua</option>
+                    <option value="Arábia Saudita">Arábia Saudita</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armênia">Armênia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Austrália">Austrália</option>
+                    <option value="Áustria">Áustria</option>
+                    <option value="Azerbaijão">Azerbaijão</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrein">Bahrein</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Bélgica">Bélgica</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermudas">Bermudas</option>
+                    <option value="Botsuana">Botsuana</option>
+                    <option value="Brasil" selected>Brasil</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Bulgária">Bulgária</option>
+                    <option value="Burkina Fasso">Burkina Fasso</option>
+                    <option value="botão">botão</option>
+                    <option value="Cabo Verde">Cabo Verde</option>
+                    <option value="Camarões">Camarões</option>
+                    <option value="Camboja">Camboja</option>
+                    <option value="Canadá">Canadá</option>
+                    <option value="Cazaquistão">Cazaquistão</option>
+                    <option value="Chade">Chade</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+                    <option value="Colômbia">Colômbia</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Coréia do Sul">Coréia do Sul</option>
+                    <option value="Costa do Marfim">Costa do Marfim</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Croácia">Croácia</option>
+                    <option value="Dinamarca">Dinamarca</option>
+                    <option value="Djibuti">Djibuti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="EUA">EUA</option>
+                    <option value="Egito">Egito</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Emirados Árabes">Emirados Árabes</option>
+                    <option value="Equador">Equador</option>
+                    <option value="Eritréia">Eritréia</option>
+                    <option value="Escócia">Escócia</option>
+                    <option value="Eslováquia">Eslováquia</option>
+                    <option value="Eslovênia">Eslovênia</option>
+                    <option value="Espanha">Espanha</option>
+                    <option value="Estônia">Estônia</option>
+                    <option value="Etiópia">Etiópia</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Filipinas">Filipinas</option>
+                    <option value="Finlândia">Finlândia</option>
+                    <option value="França">França</option>
+                    <option value="Gabão">Gabão</option>
+                    <option value="Gâmbia">Gâmbia</option>
+                    <option value="Gana">Gana</option>
+                    <option value="Geórgia">Geórgia</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Grécia">Grécia</option>
+                    <option value="Guadalupe">Guadalupe</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guiana">Guiana</option>
+                    <option value="Guiana Francesa">Guiana Francesa</option>
+                    <option value="Guiné-bissau">Guiné-bissau</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Holanda">Holanda</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungria">Hungria</option>
+                    <option value="Iêmen">Iêmen</option>
+                    <option value="Ilhas Cayman">Ilhas Cayman</option>
+                    <option value="Ilhas Cook">Ilhas Cook</option>
+                    <option value="Ilhas Curaçao">Ilhas Curaçao</option>
+                    <option value="Ilhas Marshall">Ilhas Marshall</option>
+                    <option value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+                    <option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                    <option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                    <option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                    <option value="Índia">Índia</option>
+                    <option value="Indonésia">Indonésia</option>
+                    <option value="Inglaterra">Inglaterra</option>
+                    <option value="Irlanda">Irlanda</option>
+                    <option value="Islândia">Islândia</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Itália">Itália</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japão">Japão</option>
+                    <option value="Jordânia">Jordânia</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Líbano">Líbano</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lituânia">Lituânia</option>
+                    <option value="Luxemburgo">Luxemburgo</option>
+                    <option value="Macau">Macau</option>
+                    <option value="Macedônia">Macedônia</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malásia">Malásia</option>
+                    <option value="Malaui">Malaui</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marrocos">Marrocos</option>
+                    <option value="Martinica">Martinica</option>
+                    <option value="Mauritânia">Mauritânia</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="México">México</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Mônaco">Mônaco</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Nicarágua">Nicarágua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigéria">Nigéria</option>
+                    <option value="Noruega">Noruega</option>
+                    <option value="Nova Caledônia">Nova Caledônia</option>
+                    <option value="Nova Zelândia">Nova Zelândia</option>
+                    <option value="Omã">Omã</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Papua-nova Guiné">Papua-nova Guiné</option>
+                    <option value="Paquistão">Paquistão</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Polinésia Francesa">Polinésia Francesa</option>
+                    <option value="Polônia">Polônia</option>
+                    <option value="Porto Rico">Porto Rico</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Quênia">Quênia</option>
+                    <option value="Rep. Dominicana">Rep. Dominicana</option>
+                    <option value="Rep. Tcheca">Rep. Tcheca</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romênia">Romênia</option>
+                    <option value="Ruanda">Ruanda</option>
+                    <option value="Rússia">Rússia</option>
+                    <option value="Saipan">Saipan</option>
+                    <option value="Samoa Americana">Samoa Americana</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Serra Leone">Serra Leone</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Singapura">Singapura</option>
+                    <option value="Síria">Síria</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+                    <option value="St. Lúcia">St. Lúcia</option>
+                    <option value="St. Vincent">St. Vincent</option>
+                    <option value="Sudão">Sudão</option>
+                    <option value="Suécia">Suécia</option>
+                    <option value="Suiça">Suiça</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Tailândia">Tailândia</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tanzânia">Tanzânia</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                    <option value="Tunísia">Tunísia</option>
+                    <option value="Turquia">Turquia</option>
+                    <option value="Ucrânia">Ucrânia</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Uruguai">Uruguai</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnã">Vietnã</option>
+                    <option value="Zaire">Zaire</option>
+                    <option value="Zâmbia">Zâmbia</option>
+                </select>
+            </div>
+            <div class="name">
+                <label><strong>Estado em que Nasceu:</strong></label>
+                <select class="estado">
+                    <option selected disable value="">Selecione</option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Espírito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                    <option>Distrito Federal</option>
+                </select>
+            </div>
+            <div class="name">
+                <label><strong>CPF:</strong></label>
+                <input type="number" nome="CPF" class="cpf" required>
+            </div>
+            <div class="name">
+                <label><strong>Passaporte:</strong></label>
+                <input type="text" nome="passport" class="passport">
+            </div>
+            <div class="name">
+                <label><strong>Nº Registro Profissional:</strong></label>
+                <input type="number" nome="registro" class="registro" required>
+            </div>
+            <div class="checkbox">
+                <label><strong>Provisório:</strong></label>
+                <input type="radio" name="gender" value="masculino" class="gender">Sim
+                <input type="radio" name="gender" value="feminino" class="gender">Não
+            </div>
+            <div class="name">
+                <label><strong>Valido Até:</strong></label>
+                <input type="date" name="validade" class="validade" required>
+            </div>
+            <div class="name">
+                <label><strong>E-mail:</strong></label>
+                <input type="e-mail" nome="email" class="email" required>
+            </div>
+            <div class="name">
+                <label><strong>Telefones:</strong></label>
+                <input placeholder="Principal" type="number" nome="telefone" class="tel" required>
+                <input placeholder="Secundário" type="number" tel="celular" class="tel" required>
+            </div>
+        </fieldset>
+
+    
+        <fieldset>
+            <h2>Endereço</h2>
+            <div class="name">
+                <label><strong>Rua:</strong></label>
+                <input type="text" name="endereço" class="address">
+                <label><strong>Bairro:</strong></label>
+                <input type="text" name="endereço" class="address">
+                <label><strong>Cidade:</strong></label>
+                <input type="text" name="endereço" class="address">
+                <label><strong>CEP:</strong></label>
+                <input type="number" name="endereço" class="address">
+            </div>
+            <div class="name">
+                <label><strong>Rede Social/Site:</strong></label>
+                <input type="text" name="social" class="social">
+            </div>
+        </fieldset>
+        
+            <fieldset>
+                <h2>Experiência Profissional</h2>
+
+                <div class="name">
+                    <label><strong>Nos conte sobre seus trabalhos:</strong></label>
+                   <textarea class="areatexto" row="6" style="width: 48em; height: 8em;" placeholder="Mais relevantes e recentes"></textarea>
+                </div>
+                <h3>Formação Profissional Artística</h3>
+                <div class="name">
+                    <label><strong>Curso:</strong></label>
+                    <input type="text" name="formação" class="formação">
+                    <label><strong>Instituição:</strong></label>
+                    <input type="text" name="formação" class="formação">
+                    <label><strong>Ano de Conclusão:</strong></label>
+                    <input type="date" name="formação" class="formação">
+                    <label><strong>Curso:</strong></label>
+                    <input type="text" name="formação" class="formação">
+                    <label><strong>Instituição:</strong></label>
+                    <input type="text" name="formação" class="formação">
+                    <label><strong>Ano de Conclusão:</strong></label>
+                    <input type="date" name="formação" class="formação">
+                </div>
+                <div class="name">
+                    <h3>Premiações</h3>
+                    <label><strong>Nome do Prêmio:</strong></label>
+                    <input type="text" name="premio" class="premio">
+                    <label><strong>Ano do Prêmio:</strong></label>
+                    <input type="date" name="formação" class="formação">
+                    <label><strong>Nome do Prêmio:</strong></label>
+                    <input type="text" name="premio" class="premio">
+                    <label><strong>Ano do Prêmio:</strong></label>
+                    <input type="date" name="formação" class="formação">
+                <div>
+            </fieldset>
+
+            <fieldset>
+               
+                <h2>Aptidões</h2>
+                <div class="name">
+                    <label><strong>Nos conte sobre experiências em outras áreas:</strong></label>
+                    <textarea  class="areatexto" row="6" style="width: 48em; height: 8em;" name="experiencia" placeholder="Ex: Artes circenses"></textarea>
+                    
+                </div>
+                <div class="check">
+                    <label><strong>Sotaques:</strong></label>
+                    <p><strong>Próprio e os que sabe fazer</strong></p>
+                </div>
+                <div class="box-checkbox">
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque1" value="Africano">
+                        <label for="sotaque1">Africano</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque2" value="Alemão">
+                        <label for="sotaque2">Alemão</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque3" value="Árabe">
+                        <label for="sotaque3">Árabe</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque4" value="Eslavo">
+                        <label for="sotaque4">Eslavo</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque5" value="Lusitano">
+                        <label for="sotaque5">Lusitano</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque6" value="Francês">
+                        <label for="sotaque6">Francês</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque7" value="Espanhol">
+                        <label for="sotaque7">Espanhol</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque8" value="Inglês">
+                        <label for="sotaque8">Inglês</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque9" value="Nórdico">
+                        <label for="sotaque9">Nórdico</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque10" value="Italiano">
+                        <label for="sotaque10">Italiano</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque11" value="Judeu">
+                        <label for="sotaque11">Judeu</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque12" value="Japonês">
+                        <label for="sotaque12">Japonês</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque13" value="Americano">
+                        <label for="sotaque13">Americano</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque14" value="BR/São Paulo">
+                        <label for="sotaque14">BR/São Paulo</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque15" value="BR/Sul">
+                        <label for="sotaque15">BR/Sul</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque16" value="BR/Rio">
+                        <label for="sotaque16">BR/Rio</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque17" value="BR/Norte-NE">
+                        <label for="sotaque17">BR/Norte-NE</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque18" value="BR/Nordeste">
+                        <label for="sotaque18">BR/Nordeste</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque19" value="BR/Centro-Oeste">
+                        <label for="sotaque19">BR/Centro-Oeste</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque20" value="BR/Minas">
+                        <label for="sotaque20">BR/Minas</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="sotaque" id="sotaque21" value="BR/Caipira">
+                        <label for="sotaque21">BR/Caipira</label>
+                    </div>
+                </div>
+
+                <div class="check">
+                    <label><strong>Sabe Conduzir:</strong></label>
+                    <p><strong>OBS: Com licença/Carteira para conduzir</strong></p>
+                </div>
+                <div class="box-checkbox">
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo1">
+                        <label for="veiculo1">Avião</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo2">
+                        <label for="veiculo2">Bicicleta</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo3">
+                        <label for="veiculo3">Helicóptero</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo4">
+                        <label for="veiculo4">Moto</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo5">
+                        <label for="veiculo5">Caminhão</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo6">
+                        <label for="veiculo6">Ônibus</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo7">
+                        <label for="veiculo7">Carro</label> 
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo8">
+                        <label for="veiculo8">Ultraleve</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="checkbox" name="habilitação" id="veiculo9">
+                        <label for="veiculo9">Cavalo</label>
+                    </div>
+                </div>
+                <div class="name">
+                    <label><strong>Instrumentos Musicais:</strong></label>
+                    <textarea row="6" style="width: 48em; height: 8em;" name="instrumentos" class="areatexto"></textarea>
+                </div>
+                <div class="name">
+                    <label><strong>Idiomas Fluentes:</strong></label>
+                    <input placeholder="Idioma 1" type="text" nome="Idiomas" class="idiomas">
+                    <input placeholder="Idioma 2"  type="text" nome="idiomas" class="idiomas">
+                    <input placeholder="Idioma 3" type="text" nome="idiomas" class="idiomas">
+                    <input placeholder="Idioma 4"  type="text" nome="idiomas" class="idiomas">
+                </div>
+                <div class="checkbox">
+                    <label><strong>Humor:</strong></label>
+                    <input type="checkbox" name="humor" id="tipohumor1">
+                    <label for="tipohumor1">Ator Comediante</label>
+                    <input type="checkbox" name="humor" id="tipohumor2">
+                    <label for="tipohumor2">Humorista</label>
+                </div>
+                <div class="checkbox">
+                    <label><strong>Canto:</strong></label>
+                    <input type="checkbox" name="canto" id="canto1">
+                    <label for="canto1">Não</label>
+                    <input type="checkbox" name="canto" id="canto2">
+                    <label for="canto2">Popular</label>
+                    <input type="checkbox" name="canto" id="canto3">
+                    <label for="canto3">Musical Theater</label>
+                    <input type="checkbox" name="canto" id="canto4">
+                    <label for="canto4">Coral</label>
+                    <input type="checkbox" name="canto" id="canto5">
+                    <label for="canto5">Lírico</label>
+                    <textarea class="areatexto" row="6" style="width: 48em; height: 8em;" placeholder="Outros" name="canto"></textarea>
+                </div>
+                <div class="name">
+                    <label><strong>Dança:</strong></label>
+                    <textarea class="areatexto" row="6" style="width: 48em; height: 8em;" name="dança"></textarea>
+                </div>
+                <div class="name">
+                    <label><strong>Esportes:</strong></label>
+                    <textarea class="areatexto" row="6" style="width: 48em; height: 8em;" name="esportes"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h2>Características Físicas</h2>
+                <div class="name">
+                    <label><strong>Idade Aparente:</strong></label>
+                    <input type="text" name="idadeaparente" class="age">
+                </div>
+                <div class="name">
+                    <label><strong>Altura:</strong></label>
+                    <input type="number" name="altura" class="height">
+                </div>
+                <div class="check">
+                    <label><strong>Cor dos Olhos:</strong></label>
+                </div>
+                <div class="box-checkbox">
+                    <input type="radio" name="cor" value="Azul">Azul
+                    <input type="radio" name="cor" value="Castanho">Castanho
+                    <input type="radio" name="cor" value="Castanho Claro">Castanho Claro
+                    <input type="radio" name="cor" value="Castanho Escuro">Castanho Escuro
+                    <input type="radio" name="cor" value="Castanho Esverdeado">Castanho Esverdeado
+                    <input type="radio" name="cor" value="Esverdeado">Esverdeado
+                    <input type="radio" name="cor" value="Mel">Mel
+                    <input type="radio" name="cor" value="Preto">Preto
+                    <input type="radio" name="cor" value="Verde">Verde
+                </div>
+                <div class="check">
+                    <label><strong>Cor da Pele:</strong></label>
+                </div>
+                <div class="box-checkbox2">
+                    <input type="radio" name="pele" value="Branca">Branca
+                    <input type="radio" name="pele" value="Indígena">Indígena
+                    <input type="radio" name="pele" value="Preta">Preta
+                    <input type="radio" name="pele" value="Preta pele clara">Preta pele clara
+                    <input type="radio" name="pele" value="">Preta retinta
+                    <input type="radio" name="pele" value="">Sardenta (Ruivos)
+                    <input type="radio" name="pele" value="">Amarela (Asiático)
+                </div>
+                <div class="check">
+                    <label><strong>Etnia:</strong></label>
+                    <p><strong>Tipos etnicos que pode interpretar</strong></p>
+                </div>
+                <div class="box-checkbox">
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia1">
+                        <label for="etnia1">Anglo Saxão</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia2">
+                        <label for="etnia2">Italiano</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia3">
+                        <label for="etnia3">Chinês</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia4">
+                        <label for="etnia4">Japonês</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia5">
+                        <label for="etnia5">Judeu</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia6">
+                        <label for="etnia6">Nôrdico</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia7">
+                        <label for="etnia7">Coreano</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia8">
+                        <label for="etnia8">Hindu</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia9">
+                        <label for="etnia9">BR/Nordeste</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia10">
+                        <label for="etnia10">BR/Sul</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia11">
+                        <label for="etnia11">BR/Centro</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia12">
+                        <label for="etnia12">BR/Sudeste</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia13">
+                        <label for="etnia13">Latino</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia14">
+                        <label for="etnia14">Africano</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia15">
+                        <label for="etnia15">Americano</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia16">
+                        <label for="etnia16">Argentino</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia17">
+                        <label for="etnia17">Grego</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia18">
+                        <label for="etnia18">Mestiço</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia19">
+                        <label for="etnia19">Russo</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia20">
+                        <label for="etnia20">Chileno</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia21">
+                        <label for="etnia21">Cigano</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia22">
+                        <label for="etnia22">Inglês</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia23">
+                        <label for="etnia23">Paraguaio</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia24">
+                        <label for="etnia24">Francês</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia25">
+                        <label for="etnia25">Portugês</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia26">
+                        <label for="etnia26">Germânico</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia27">
+                        <label for="etnia27">Espanhol</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia28">
+                        <label for="etnia28">Árabe</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia29">
+                        <label for="etnia29">BR/Norte</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia30">
+                        <label for="etnia31">BR/Indígena</label>
+                    </div>
+                    <div class="input-box" >
+                        <input type="checkbox" name="etnia" id="etnia31">
+                        <label for="etnia31">Turco</label>
+                    </div>
+                </div>
+                <div class="check">
+                    <label><strong>Tipo de Cabeleira:</strong></label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" name="cabelo" id="cabelo1">
+                    <label for="cabelo1">Calva</label>
+                    <input type="radio" name="cabelo" id="cabelo2">
+                    <label for="cabelo2">Cheia</label>
+                    <input type="radio" name="cabelo" id="cabelo3">
+                    <label for="cabelo3">Longa</label>
+                    <input type="radio" name="cabelo" id="cabelo4">
+                    <label for="cabelo4">Curta</label>
+                    <input type="radio" name="cabelo" id="cabelo5">
+                    <label for="cabelo5">Raspada</label>
+                </div>
+                <div class="check">
+                    <label><strong>Peso:</strong></label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" name="peso" id="corpo1">
+                    <label for="corpo1">Muito Magro</label>
+                    <input type="radio" name="peso" id="corpo2">
+                    <label for="corpo2">Magro</label>
+                    <input type="radio" name="peso" id="corpo3">
+                    <label for="corpo3">Atlético</label>
+                    <input type="radio" name="peso" id="corpo4">
+                    <label for="corpo4">Gordo</label>
+                    <input type="radio" name="peso" id="corpo5">
+                    <label for="corpo5">Obeso</label>
+                </div>
+                <div class="check">
+                    <label><strong>Cor do Cabelo:</strong></label>
+                </div>
+                <div class="box-checkbox2">
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Castanho</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Castanho Claro</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Castanho Escuro</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Grisalho</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Loiro</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Preto</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Ruivo</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Descolorido</label>
+                </div>
+                <div class="check">
+                    <label><strong>Tipo de Cabelo:</strong></label>
+                </div>
+                <div class="box-checkbox2">
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Alisado</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Crespo</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Encaracolado</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Cacheado</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Liso</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Ondulado</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Dread</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Raspado</label>
+                    <input type="radio" name="corcabelo" id="cabelo">
+                    <label for="cabelo">Black</label>
+                </div>
+                <div class="name">
+                    <label><strong>Características Especiais:</strong></label>
+                    <textarea class="areatexto" row="6" style="width: 48em; height: 8em;" placeholder="Ex:irmãos gêmeos, tatuagens grandes, etc" name="aparencia"></textarea>
+                </div>
+            </fieldset>
+            <div class="box-btn">
+                <button class="btn" type="submit">Enviar</button>
+            </div>
+    </form>
+</body>
+</html>
