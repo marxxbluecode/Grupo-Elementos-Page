@@ -1,14 +1,14 @@
-# Streaming clone
+# Grupo Elementos 🦉
 
-This project is a streaming website clone, kind like if HBOMax and Stremio had a child.
+This project is runninng low on money, so in order to help the needy, aka Me, u can make a donation to this pix code: fb34ffc7-efcd-412b-991b-211ca59e0fad , every donation is very welcome , may the God(s) you believe in bless you 🙏
 
-### `Just playing with read me`
+### `Projeto em desenvolvimento`
 
-**Note: Nada não**
+**Note: 👍 👍**
 
 ## Learn More
 
-To learn more about Cringeness and Cringe Culture, please visit [Too Cringe for you?](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley).
+To learn more about Grupo Elementos, please visit [Elementos Produções](http://www.grupoelementos.com.br/).
 
 
 ### `🤣` Bye.
