@@ -10,7 +10,7 @@ import Home from "./components/Home";
 import styled from "styled-components";
 import logo from "./components/images/GrupoLogo.png";
 import lupa from "./components/images/lupa.png";
-import candara from "./components/Fonts/Candara.ttf";
+import dayroman from "./components/Fonts/DAYROM.ttf";
 import capa from "./components/images/Capa site.png";
 import { createGlobalStyle } from "styled-components";
 
@@ -23,8 +23,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
   }
   @font-face {
-    font-family: 'Candara';
-    src: url(${candara});
+    font-family: 'dayroman';
+    src: url(${dayroman});
  }
 `;
 const HeaderBody = styled.div`
@@ -235,7 +235,7 @@ export default function App() {
                   <Link to="/colaborador"><Portal4>Portal do Colaborador</Portal4></Link>
                 </Li>
                 <Li> 
-                  <Link to="/social"><Portal5>Diário Social</Portal5></Link>
+                  <Link to="/social"><Portal5>Portal Social</Portal5></Link>
                 </Li>
                 </Ul>
                 </nav>

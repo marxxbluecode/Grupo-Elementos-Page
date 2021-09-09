@@ -4,7 +4,7 @@ This project is runninng low on money, so in order to help the needy, aka Me, u 
 
 ### `Projeto em desenvolvimento`
 
-**Note: 👍 👍**
+**Note:👍👍**
 
 ## Learn More
 
